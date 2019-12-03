@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Category from './pages/Category/Category';
 import Shop from './pages/Shop/Shop';
 import Header from './components/Header/Header';
+import LoginRegister from './pages/LoginRegister/LoginRegister';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route exact path="/shop" component={Shop} />
         <Route path="/shop/:category" component={Category} />
+        <Route path="/signin" component={LoginRegister} />
       </Switch>
     </div>
   );
