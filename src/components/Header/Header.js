@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/crown.svg'
-import './Header.scss'
+import './Header.scss';
+import { auth } from '../../firebase/firebase.utils';
 
 class Header extends React.Component {
     render() {
+        const currentUser = this.props.currentUser;
         return (
             <div className="header">
                 <Link to="/" className="logo-container" >
@@ -17,9 +19,12 @@ class Header extends React.Component {
                     <Link to="/" className="option" >
                         CONTACT
                 </Link>
-                    <Link to="/signin" className="option" >
-                        SIGN IN
-                    </Link>
+                    {
+                        currentUser ?
+                            <div className="option" onClick={() => auth.signOut()}>SIGN OUT</div>
+                            :
+                            <Link className="option" to="/signin">SIGN IN</Link>
+                    }
                 </div>
             </div>
         )

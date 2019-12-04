@@ -1,10 +1,15 @@
 .sign-in{
-    width:30vw;
+    width:480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     .title{
         margin:10px 0;
+    }
+    .form-footer{
+        width:auto;
+        display: flex;
+        justify-content: space-between;
     }
 }
