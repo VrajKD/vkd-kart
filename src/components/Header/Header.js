@@ -5,6 +5,8 @@ import './Header.scss';
 import { auth } from '../../firebase/firebase.utils';
 
 import { connect } from 'react-redux';
+import CartIcon from '../cart-icon/CartIcon';
+import CartDropdown from '../CartDropdown/CartDropdown';
 
 class Header extends React.Component {
     render() {
@@ -27,15 +29,18 @@ class Header extends React.Component {
                             :
                             <Link className="option" to="/signin">SIGN IN</Link>
                     }
+                    <CartIcon />
                 </div>
+                {this.props.visible ? <CartDropdown /> : null}
             </div>
         )
     }
 }
 
-const mapStatetoProps = (state) => {
+const mapStatetoProps = ({ user: { currentUser }, cart: { visible } }) => {
     return ({
-        currentUser: state.user.currentUser
+        currentUser,
+        visible
     })
 }
 

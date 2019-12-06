@@ -3,7 +3,7 @@ import './CollectionItem.scss'
 
 class CollectionItem extends React.Component {
     render() {
-        const {  name, imageUrl, price } = this.props;
+        const { name, imageUrl, price } = this.props;
         return (
             <div className="collection-item">
                 <div className="image" style={{
