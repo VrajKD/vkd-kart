@@ -12,6 +12,8 @@
   font-family: 'Montserrat';
   font-weight: bolder;
   border: none;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   transition: background-color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -20,6 +22,20 @@
     color: black;
     border: 1px solid black;
   }
+
+  &.inverted{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  display: none;
+    
+  &:hover{
+    background-color: black;
+  color: white;
+    display: flex;
+  }
+  }
+
 
   &.google-signin{
     margin-left: 20px;
