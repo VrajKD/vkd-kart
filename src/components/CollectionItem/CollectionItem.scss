@@ -8,10 +8,11 @@
     overflow: hidden;
     position: relative;
 
-    .custom-button{
+    .button{
         position: absolute;
         top:255px;
         display: none;
+        
     }
 
     
@@ -30,8 +31,9 @@
             opacity: 0.3;
             transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
-        .custom-button{
+        .button{
             display: flex;
+            transition:display 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         }
     }
 
