@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/vkd-kart/static/css/main.b2c89fdd.chunk.css",
-    "main.js": "/vkd-kart/static/js/main.bc49145d.chunk.js",
-    "main.js.map": "/vkd-kart/static/js/main.bc49145d.chunk.js.map",
+    "main.css": "/vkd-kart/static/css/main.f7c23c77.chunk.css",
+    "main.js": "/vkd-kart/static/js/main.49a43d72.chunk.js",
+    "main.js.map": "/vkd-kart/static/js/main.49a43d72.chunk.js.map",
     "runtime-main.js": "/vkd-kart/static/js/runtime-main.3c6fce3c.js",
     "runtime-main.js.map": "/vkd-kart/static/js/runtime-main.3c6fce3c.js.map",
-    "static/js/2.24255851.chunk.js": "/vkd-kart/static/js/2.24255851.chunk.js",
-    "static/js/2.24255851.chunk.js.map": "/vkd-kart/static/js/2.24255851.chunk.js.map",
+    "static/js/2.fa42941b.chunk.js": "/vkd-kart/static/js/2.fa42941b.chunk.js",
+    "static/js/2.fa42941b.chunk.js.map": "/vkd-kart/static/js/2.fa42941b.chunk.js.map",
     "index.html": "/vkd-kart/index.html",
-    "precache-manifest.3d7430062c803cdeca2b501426804ca0.js": "/vkd-kart/precache-manifest.3d7430062c803cdeca2b501426804ca0.js",
+    "precache-manifest.bdf327816faf4a18a87ff4888b161863.js": "/vkd-kart/precache-manifest.bdf327816faf4a18a87ff4888b161863.js",
     "service-worker.js": "/vkd-kart/service-worker.js",
-    "static/css/main.b2c89fdd.chunk.css.map": "/vkd-kart/static/css/main.b2c89fdd.chunk.css.map",
+    "static/css/main.f7c23c77.chunk.css.map": "/vkd-kart/static/css/main.f7c23c77.chunk.css.map",
     "static/media/crown.ed28accb.svg": "/vkd-kart/static/media/crown.ed28accb.svg",
     "static/media/shopping-bag.30f07071.svg": "/vkd-kart/static/media/shopping-bag.30f07071.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3c6fce3c.js",
-    "static/js/2.24255851.chunk.js",
-    "static/css/main.b2c89fdd.chunk.css",
-    "static/js/main.bc49145d.chunk.js"
+    "static/js/2.fa42941b.chunk.js",
+    "static/css/main.f7c23c77.chunk.css",
+    "static/js/main.49a43d72.chunk.js"
   ]
 }
