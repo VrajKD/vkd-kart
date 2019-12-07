@@ -1,6 +1,7 @@
 {
   "name": "vkd-kart",
   "version": "0.1.0",
+  "homepage": "https://vrajkd.github.io/vkd-kart",
   "private": true,
   "dependencies": {
     "firebase": "^7.5.0",
@@ -14,6 +15,8 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
