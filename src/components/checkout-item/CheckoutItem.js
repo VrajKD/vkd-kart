@@ -18,7 +18,7 @@ class CheckoutItem extends React.Component {
                     <span className="value">{cartItem.quantity}</span>
                     <div className="arrow" onClick={() => AddItem(cartItem)}>&#10095;</div>
                 </span>
-                <span className="price">₹{cartItem.price}</span>
+                <span className="price">${cartItem.price}</span>
                 <div className="remove-button" onClick={() => clearItem(cartItem)}>
                     &#10005;
                 </div>

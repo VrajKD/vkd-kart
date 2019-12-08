@@ -17,8 +17,11 @@
         }
     }
 
-    .name,.quantity,.price{
+    .name,.price{
         width:23%;
+    }
+    .quantity{
+        width:21%;
     }
     .quantity{
         display: flex;
