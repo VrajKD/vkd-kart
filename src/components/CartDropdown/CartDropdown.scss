@@ -11,6 +11,11 @@
     background-color: white;
     z-index: 5;
 
+    .empty-cart{
+        padding:5px 25px;
+        color: slategray;
+    }
+
     .cart-items{
         height: 240px;
         overflow-y: auto;
