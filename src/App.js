@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Homepage from './pages/Homepage/Homepage'
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Category from './pages/Category/Category';
 import Shop from './pages/Shop/Shop';
 import Header from './components/Header/Header';
 import LoginRegister from './pages/LoginRegister/LoginRegister';
@@ -49,9 +48,8 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/vkd-kart" component={Homepage} />
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/shop" component={Shop} />
+          <Route path="/shop" component={Shop} />
           <Route exact path="/checkout" component={Checkout} />
-          <Route path="/shop/:category" component={Category} />
           <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to='/' />) : (<LoginRegister />)} />
         </Switch>
       </div>
