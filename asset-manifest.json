@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/vkd-kart/static/css/main.f0b45c16.chunk.css",
-    "main.js": "/vkd-kart/static/js/main.3c1e0a8d.chunk.js",
-    "main.js.map": "/vkd-kart/static/js/main.3c1e0a8d.chunk.js.map",
+    "main.js": "/vkd-kart/static/js/main.fe6174ee.chunk.js",
+    "main.js.map": "/vkd-kart/static/js/main.fe6174ee.chunk.js.map",
     "runtime-main.js": "/vkd-kart/static/js/runtime-main.3c6fce3c.js",
     "runtime-main.js.map": "/vkd-kart/static/js/runtime-main.3c6fce3c.js.map",
     "static/js/2.2e138f13.chunk.js": "/vkd-kart/static/js/2.2e138f13.chunk.js",
     "static/js/2.2e138f13.chunk.js.map": "/vkd-kart/static/js/2.2e138f13.chunk.js.map",
     "index.html": "/vkd-kart/index.html",
-    "precache-manifest.3f6e3f0f89313e239bce23ee7806a862.js": "/vkd-kart/precache-manifest.3f6e3f0f89313e239bce23ee7806a862.js",
+    "precache-manifest.65e037bf9b9182b8c4bc0d9c8711ea4e.js": "/vkd-kart/precache-manifest.65e037bf9b9182b8c4bc0d9c8711ea4e.js",
     "service-worker.js": "/vkd-kart/service-worker.js",
     "static/css/main.f0b45c16.chunk.css.map": "/vkd-kart/static/css/main.f0b45c16.chunk.css.map",
     "static/media/crown.ed28accb.svg": "/vkd-kart/static/media/crown.ed28accb.svg",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3c6fce3c.js",
     "static/js/2.2e138f13.chunk.js",
     "static/css/main.f0b45c16.chunk.css",
-    "static/js/main.3c1e0a8d.chunk.js"
+    "static/js/main.fe6174ee.chunk.js"
   ]
 }
