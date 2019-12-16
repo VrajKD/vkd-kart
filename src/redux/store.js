@@ -7,9 +7,13 @@ import rootReducer from './root-reducer';
 
 //SETUP MIDDLEWARES
 
-const middlewares = [logger]; //Because we willl use many middlewares and now we can pass it in directlyand as react is expectng array as middleware
+const middlewares = []; //Because we willl use many middlewares and now we can pass it in directlyand as react is expectng array as middleware
+
+if (process.env.NODE_ENV === 'development') {
+    middlewares.push(logger);
+}
 export const store = createStore(rootReducer, applyMiddleware(...middlewares));
-export  const persistor = persistStore(store);
+export const persistor = persistStore(store);
 export default { store, persistor };
 
 
