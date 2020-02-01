@@ -15,7 +15,7 @@ class Header extends React.Component {
         const currentUser = this.props.currentUser;
         return (
             <HeaderContainer>
-                <LogoContainer>
+                <LogoContainer to="/" >
                     <Logo className="logo" />
                 </LogoContainer>
                 <OptionLinksContainer>
