@@ -2,7 +2,7 @@
   "name": "vkd-kart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vrajkd.github.io/vkd-kart",
+  
   "dependencies": {
     "firebase": "^7.5.0",
     "node-sass": "^4.13.0",
