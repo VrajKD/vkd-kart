@@ -1,5 +1,6 @@
 import React from 'react';
-import './CheckoutItem.scss'
+// import './CheckoutItem.scss'
+import { CheckoutImage, CheckoutImageContainer, CheckoutItemContainer, CheckoutItemRemove, CheckoutItemText, CheckoutQuantityArrow, CheckoutQuantityContainer, CheckoutQuantityValue } from './CheckoutItem-styled';
 
 import { connect } from 'react-redux';
 import { clearItem, AddItem, removeItem } from '../../redux/cart/cart-actions';
@@ -8,21 +9,21 @@ class CheckoutItem extends React.Component {
     render() {
         const { cartItem, clearItem, AddItem, removeItem } = this.props;
         return (
-            <div className="checkout-item">
-                <div className="image-container">
-                    <img src={cartItem.imageUrl} alt='item' />
-                </div>
-                <span className="name">{cartItem.name}</span>
-                <span className="quantity">
-                    <div className="arrow" onClick={() => removeItem(cartItem)}>&#10094;</div>
-                    <span className="value">{cartItem.quantity}</span>
-                    <div className="arrow" onClick={() => AddItem(cartItem)}>&#10095;</div>
-                </span>
-                <span className="price">${cartItem.price}</span>
-                <div className="remove-button" onClick={() => clearItem(cartItem)}>
+            <CheckoutItemContainer>
+                <CheckoutImageContainer>
+                    <CheckoutImage src={cartItem.imageUrl} alt='item' />
+                </CheckoutImageContainer>
+                <CheckoutItemText>{cartItem.name}</CheckoutItemText>
+                <CheckoutQuantityContainer>
+                    <CheckoutQuantityArrow onClick={() => removeItem(cartItem)}>&#10094;</CheckoutQuantityArrow>
+                    <CheckoutQuantityValue>{cartItem.quantity}</CheckoutQuantityValue>
+                    <CheckoutQuantityArrow onClick={() => AddItem(cartItem)}>&#10095;</CheckoutQuantityArrow>
+                </CheckoutQuantityContainer>
+                <CheckoutItemText>${cartItem.price}</CheckoutItemText>
+                <CheckoutItemRemove onClick={() => clearItem(cartItem)}>
                     &#10005;
-                </div>
-            </div>
+                </CheckoutItemRemove>
+            </CheckoutItemContainer>
         )
     }
 }

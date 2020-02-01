@@ -1,14 +1,15 @@
 import React from 'react';
 import CollectionItem from '../CollectionItem/CollectionItem';
-import './PreviewCollection.scss'
+// import './PreviewCollection.scss'
+import { PreviewCollectionContainer, PreviewCollectionTitle, PreviewOfCollection } from './PreviewCollection-styled'
 
 class PreviewCollection extends React.Component {
     render() {
         console.log(this.props);
         return (
-            <div className="collection-preview">
-                <h2>{this.props.title}</h2>
-                <div className="preview">
+            <PreviewCollectionContainer>
+                <PreviewCollectionTitle>{this.props.title}</PreviewCollectionTitle>
+                <PreviewOfCollection>
 
                     {this.props.items
                         .filter((item, index) => index < 4)
@@ -16,9 +17,9 @@ class PreviewCollection extends React.Component {
                             <CollectionItem key={item.id} item={item} />
                         ))
                     }
-                </div>
+                </PreviewOfCollection>
 
-            </div>
+            </PreviewCollectionContainer>
         )
     }
 }

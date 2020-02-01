@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/crown.svg'
-import './Header.scss';
+// import './Header.scss';
+import { HeaderContainer, OptionLink, OptionLinksContainer, LogoContainer } from './Header-styled';
 import { auth } from '../../firebase/firebase.utils';
 import { selectCartVisible } from '../../redux/cart/cart-selectors';
 import { selectCurrentUser } from '../../redux/user/user-selectors';
@@ -14,27 +14,27 @@ class Header extends React.Component {
     render() {
         const currentUser = this.props.currentUser;
         return (
-            <div className="header">
-                <Link to="/" className="logo-container" >
+            <HeaderContainer>
+                <LogoContainer>
                     <Logo className="logo" />
-                </Link>
-                <div className="option-links">
-                    <Link to="/shop" className="option" >
+                </LogoContainer>
+                <OptionLinksContainer>
+                    <OptionLink to="/shop">
                         SHOP
-                </Link>
-                    <Link to="/" className="option" >
+                </OptionLink>
+                    <OptionLink to="/" >
                         CONTACT
-                </Link>
+                </OptionLink>
                     {
                         currentUser ?
-                            <div className="option" onClick={() => auth.signOut()}>SIGN OUT</div>
+                            <OptionLink as='div' onClick={() => auth.signOut()}>SIGN OUT</OptionLink>
                             :
-                            <Link className="option" to="/signin">SIGN IN</Link>
+                            <OptionLink className="option" to="/signin">SIGN IN</OptionLink>
                     }
                     <CartIcon />
-                </div>
+                </OptionLinksContainer>
                 {this.props.visible ? <CartDropdown /> : null}
-            </div>
+            </HeaderContainer>
         )
     }
 }

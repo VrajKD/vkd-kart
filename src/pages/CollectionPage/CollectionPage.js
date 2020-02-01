@@ -1,8 +1,9 @@
 import React from 'react';
 import CollectionItem from '../../components/CollectionItem/CollectionItem';
-import './CollectionPage.scss'
+// import './CollectionPage.scss'
 import { connect } from 'react-redux';
 import { selectSpecificCollection } from '../../redux/shop/shop-selectors';
+import { CollectionPageContainer, CollectionPageTitle, CollectionPageItemsContainer } from './CollectionPage-styled'
 
 class CollectionPage extends React.Component {
 
@@ -10,16 +11,16 @@ class CollectionPage extends React.Component {
         const { collection } = this.props;
         const { title, items } = collection;
         return (
-            <div className="collection-page">
-                <div className="title">{title}</div>
-                <div className="items">
+            <CollectionPageContainer>
+                <CollectionPageTitle>{title}</CollectionPageTitle>
+                <CollectionPageItemsContainer>
                     {
                         items.map(item => (
                             <CollectionItem id={item.id} item={item} />
                         ))
                     }
-                </div>
-            </div>)
+                </CollectionPageItemsContainer>
+            </CollectionPageContainer>)
     }
 }
 

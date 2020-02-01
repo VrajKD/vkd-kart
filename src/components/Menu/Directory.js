@@ -1,5 +1,6 @@
 import React from 'react';
-import './Directory.scss';
+// import './Directory.scss';
+import { MenuContainer } from './Directory-styled'
 import { connect } from 'react-redux';
 import MenuItem from '../menu-item/MenuItem';
 import { createStructuredSelector } from 'reselect';
@@ -9,7 +10,7 @@ class Directory extends React.Component {
 
   render() {
     return (
-      <div className="menu">
+      <MenuContainer>
         {
           this.props.sections.map(({ imageUrl, heading, subheading, id, size, linkUrl }) => {
             return (
@@ -17,7 +18,7 @@ class Directory extends React.Component {
             )
           })
         }
-      </div>
+      </MenuContainer>
     )
   }
 }
