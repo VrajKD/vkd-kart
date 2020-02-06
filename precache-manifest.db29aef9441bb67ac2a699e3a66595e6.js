@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "387de901668d36d1a6d709a565d6cc3d",
+    "revision": "16e7a5e0feb264597fab856c844d9446",
     "url": "/vkd-kart/index.html"
   },
   {
-    "revision": "6e30818079d0f8e3ade4",
+    "revision": "529ffc6a9ad84a1eb131",
     "url": "/vkd-kart/static/css/main.4e1e8f5e.chunk.css"
   },
   {
-    "revision": "be1a0022cd0696623c83",
-    "url": "/vkd-kart/static/js/2.8c183df4.chunk.js"
+    "revision": "873564feb2c7814fbef0",
+    "url": "/vkd-kart/static/js/2.91bb5f2a.chunk.js"
   },
   {
-    "revision": "6e30818079d0f8e3ade4",
-    "url": "/vkd-kart/static/js/main.7b086799.chunk.js"
+    "revision": "529ffc6a9ad84a1eb131",
+    "url": "/vkd-kart/static/js/main.9c3c20b2.chunk.js"
   },
   {
     "revision": "cbc7d2365ceb6529d4f1",
