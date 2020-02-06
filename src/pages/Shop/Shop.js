@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Route } from 'react-router-dom';
@@ -8,23 +8,21 @@ import CollectionOverview_Container from '../../components/collection-overview/C
 import CollectionPage_Container from '../CollectionPage/CollectionPage-Container'
 
 
-class Shop extends React.Component {
+const Shop = ({ match, fetchCollectionsStart }) => {
 
-    componentDidMount() {
-        const { fetchCollectionsStart } = this.props;
+    useEffect(() => {
         fetchCollectionsStart();
-    }
+    }, [fetchCollectionsStart])
 
-    render() {
-        const { match } = this.props;
-        return (
-            <div className="shop-page">
-                <Route exact path={`${match.path}`} component={CollectionOverview_Container} />} />
+
+    return (
+        <div className="shop-page">
+            <Route exact path={`${match.path}`} component={CollectionOverview_Container} />} />
                 <Route path={`${match.path}/:categoryID`} component={CollectionPage_Container} />} />
             </div>
-        )
-    }
+    )
 }
+
 
 const mapStateToProps = createStructuredSelector({
     collections: selectCollections,
